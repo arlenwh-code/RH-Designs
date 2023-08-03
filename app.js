@@ -6,7 +6,7 @@ const bodyParser = require("body-parser");
 require("dotenv").config();
 
 const path = require("path");
-const port = 3000 || process.env.PORT;
+let port = process.env.PORT;
 
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, 'public')));
@@ -74,6 +74,10 @@ app.post("/contact", (req, res)=>{
     main().catch(console.error);
     res.redirect("/contactsuccess");
 });
+
+if (port == null || port == "") {
+  port = 3000;
+}
 
 app.listen(port, (req, res)=>{
     console.log(`This apllication is listening on port ${port}`);
