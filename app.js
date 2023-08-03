@@ -6,11 +6,16 @@ const bodyParser = require("body-parser");
 require("dotenv").config();
 
 const path = require("path");
-const port = 3000;
+const port = 3000 || process.env.PORT;
 
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({extended: true}));
+
+if(app.get("env")==="production"){
+  const enforce = require("express-sslify");
+  app.use(enforce.HTTPS({trustProtoHeader: true}));
+}
 
 app.get('/', (req, res)=>{
     res.render('home');
