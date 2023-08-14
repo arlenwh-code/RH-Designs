@@ -850,6 +850,10 @@ nav menu css
   margin-top: 0rem;
 }
 
+.navbar-nav{
+  margin: 0 auto;
+}
+
 @media all and (min-width: 992px) {
   .navbar .nav-item .nav-link {
     margin-right: 22px;
@@ -1005,6 +1009,7 @@ nav menu css
 }
 
 .navbar .navbar-brand .logo-display {
+
   display: block;
 }
 
@@ -1132,6 +1137,14 @@ button.navbar-toggler:focus {
 /* ===================
 hero css 
 ====================== */
+.jumbotron-logo{
+  margin: 0 auto;
+}
+
+.jumbotron-text{
+  text-align: center;
+  margin-right:38px;
+}
 
 .hero-single {
   padding-top: 150px;
