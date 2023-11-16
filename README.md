@@ -24,7 +24,7 @@ User is presented with the main section of the page which contains the company l
 created by the RH-Designs And Constructions, and two buttons.\
 \
 First button links to contact us page\
-Second button links to About Us page\
+Second button links to About Us page
 \
 User is presented with marketing message from RH-Designs And Constructions.\
 This marketing message contains a "GET QUOTE->" button below it with a link to the email contact form.\
