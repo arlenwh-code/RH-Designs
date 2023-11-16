@@ -33,4 +33,4 @@ User is presented with the services section.\
 This section contains three individual Sections which discribe the three main services provided by RH-Desgins And Constructions\
 \
 User is presented with Recent Projects section\
-This section contains a gallery of multiple images managed by a navigation menu for 6 different sections.\
+This section contains a gallery of multiple images managed by a navigation menu for 6 different sections.
